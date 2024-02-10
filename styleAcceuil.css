@@ -1,0 +1,144 @@
+body {
+    margin: 0, 0, 0, 0;
+    background-color: #D1D1D1;
+    font-family: "Poppins", sans-serif;
+}
+
+/* h1 {
+    display: flex;
+    justify-content: center;
+} */
+
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+
+.navBar {
+    background-color: black;
+    color: white;
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    opacity: 0,5;
+  
+}
+
+.navBar img{
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    height: 100px;
+}
+
+
+/* .navBar a{
+    margin-right: 50px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #A06CD5;
+    border-radius: 20px;
+    color: black;
+}
+
+.navBar a:hover {
+    background-color: #6247AA;
+} */
+
+
+
+
+.search_bar{
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 60px;
+    padding: 0.5rem 1rem;
+}   
+
+.search_bar input {
+    width: 100%;
+    max-width: 600px;
+    border : 0;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+}
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main img{
+    width: 100%;
+}
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: aliceblue;
+    box-shadow: 0 4px 5px  rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.movie_info {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    gap:  0.2rem;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+
+}
+
+.movie_rating{
+    background-color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+}
+
+.movie_rating span {
+    background-color: black;
+    font-weight: bold;
+}
+
+.overview {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.6s ease-in;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+.overview .title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.overview a {
+    color: darkred;
+    border-bottom: 4px solid darkred;
+}
