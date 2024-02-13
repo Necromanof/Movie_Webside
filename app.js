@@ -26,6 +26,8 @@ async function getmovies(url){
     }
 }
 
+// Function to display a card with the movie's info in it
+
 function showMovies(movies){
     main.innerHTML = "";
 
@@ -48,6 +50,8 @@ function showMovies(movies){
         
     });
 }
+
+// Event  Listener for search button 
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
